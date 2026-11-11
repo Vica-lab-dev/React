@@ -1,12 +1,12 @@
 import './style.css'
 import siteLogo from './logo.svg'
 
-console.log(siteLogo)
+let name = "Viktor";
 
 function App() {
   return (
       <div>
-          <p className="paragraph">Test 123</p>
+          <p className="paragraph">My name is { name }</p>
           <img src={ siteLogo } alt=""/>
       </div>
   );
