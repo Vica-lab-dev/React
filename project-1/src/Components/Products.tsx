@@ -1,6 +1,10 @@
 import React from "react";
 
-const products = {
+interface ProductInterface {
+    [key: string]: number
+}
+
+const products: ProductInterface = {
     'iPhone 14': 1000,
     'iPhone 15': 1250,
     'Samsung S23 Ultra': 1100
@@ -16,7 +20,7 @@ function Products(props) {
         )
 }
 
-function CalculateTax(price, tax) {
+function CalculateTax(price:number, tax:number):number {
     return price + (price * (tax / 100))
 }
 
