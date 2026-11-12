@@ -1,4 +1,3 @@
-import './style.css'
 import siteLogo from './logo.svg'
 
 let name = "Viktor";
