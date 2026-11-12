@@ -1,12 +1,14 @@
-const products = [
-    'iPhone 14', 'iPhone 15', 'Samsung S23 Ultra'
-]
+const products = {
+    'iPhone 14': 1000,
+    'iPhone 15': 1250,
+    'Samsung S23 Ultra': 1100
+}
 
 function Products(props) {
     return (
             <>
-                { products.map(phone => {
-                    return  <p>{ phone }, tax: { props.tax}</p>
+                { Object.entries(products).map( ([phone, price]) => {
+                    return  <p>{ phone }, price: ${ price }</p>
                 }) }
             </>
         )
