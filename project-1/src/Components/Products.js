@@ -8,7 +8,7 @@ function Products(props) {
     return (
             <>
                 { Object.entries(products).map( ([phone, price]) => {
-                    return  <p>{ phone }, price: ${ price }</p>
+                    return  <p key={ phone }>{ phone }, price: ${ price } with tax: {price + (price * (props.tax / 100))}</p>
                 }) }
             </>
         )
