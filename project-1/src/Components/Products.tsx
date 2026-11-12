@@ -1,3 +1,5 @@
+import React from "react";
+
 const products = {
     'iPhone 14': 1000,
     'iPhone 15': 1250,
